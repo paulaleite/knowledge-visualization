@@ -1,1 +1,1 @@
-# knowledge-visualization
+# Visualização e Processamento de Conhecimento
