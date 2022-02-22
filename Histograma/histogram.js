@@ -1,40 +1,39 @@
-
-// configurando as dimensões e margens do gráfico
-var margin = {top: 10, right: 30, bottom: 30, left: 40},
+// set the dimensions and margins of the graph
+const margin = {top: 10, right: 30, bottom: 30, left: 40},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-// aplciando o SVG no corpo da página
-var svg = d3.select("#my_dataviz")
+// append the svg object to the body of the page
+const svg = d3.select("#my_histogram")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+          `translate(${margin.left},${margin.top})`);
 
 // get the data
-d3.csv("dataSetHisto.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv").then( function(data) {
 
   // X axis: scale and draw:
-  var x = d3.scaleLinear()
-      .domain([0, 110000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+  const x = d3.scaleLinear()
+      .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
       .range([0, width]);
   svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", `translate(0, ${height})`)
       .call(d3.axisBottom(x));
 
   // set the parameters for the histogram
-  var histogram = d3.histogram()
-      .value(function(d) { return d.total; })   // I need to give the vector of value
+  const histogram = d3.histogram()
+      .value(function(d) { return d.price; })   // I need to give the vector of value
       .domain(x.domain())  // then the domain of the graphic
-      .thresholds(x.ticks(10)); // then the numbers of bins
+      .thresholds(x.ticks(70)); // then the numbers of bins
 
   // And apply this function to data to get the bins
-  var bins = histogram(data);
+  const bins = histogram(data);
 
   // Y axis: scale and draw:
-  var y = d3.scaleLinear()
+  const y = d3.scaleLinear()
       .range([height, 0]);
       y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously
   svg.append("g")
@@ -43,11 +42,10 @@ d3.csv("dataSetHisto.csv", function(data) {
   // append the bar rectangles to the svg element
   svg.selectAll("rect")
       .data(bins)
-      .enter()
-      .append("rect")
+      .join("rect")
         .attr("x", 1)
-        .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
-        .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
+    .attr("transform", function(d) { return `translate(${x(d.x0)} , ${y(d.length)})`})
+        .attr("width", function(d) { return x(d.x1) - x(d.x0) -1})
         .attr("height", function(d) { return height - y(d.length); })
         .style("fill", "#69b3a2")
 
