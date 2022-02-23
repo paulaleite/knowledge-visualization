@@ -2,9 +2,13 @@
 
 ## Atividades
 1 - [Histograma]()
+
 2 - [Barras Empilhadas]()
+
 3 - [Dispersão]()
+
 4 - [Boxplot]()
+
 5 - [Radar]()
 
 ## Referências
