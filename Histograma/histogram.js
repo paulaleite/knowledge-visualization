@@ -13,11 +13,10 @@ const svg = d3.select("#my_histogram")
           `translate(${margin.left},${margin.top})`);
 
 // get the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv").then( function(data) {
-
+d3.csv('dataSetHisto.csv').then( function (data)  {
   // X axis: scale and draw:
   const x = d3.scaleLinear()
-      .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+      .domain([d3.min(data, function(d) { return +d.total } ), d3.max(data, function(d) { return +d.total })]) // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
       .range([0, width]);
   svg.append("g")
       .attr("transform", `translate(0, ${height})`)
@@ -25,9 +24,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
 
   // set the parameters for the histogram
   const histogram = d3.histogram()
-      .value(function(d) { return d.price; })   // I need to give the vector of value
+      .value(function(d) { return d.total; })   // I need to give the vector of value
       .domain(x.domain())  // then the domain of the graphic
-      .thresholds(x.ticks(70)); // then the numbers of bins
+      .thresholds(x.ticks(10)); // then the numbers of bins
 
   // And apply this function to data to get the bins
   const bins = histogram(data);
