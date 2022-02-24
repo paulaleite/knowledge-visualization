@@ -1,0 +1,52 @@
+group,axis,value
+Member,Austria,54.9
+Member,Belgium,63.6
+Member,Estonia,55.4
+Member,Finland,66.4
+Member,France,68.8
+Member,Germany,63.6
+Member,Greece,43
+Member,Ireland,64.3
+Member,Italy,51.4
+Member,Latvia,56.6
+Member,Lithuania,58.5
+Member,Netherlands,69.3
+Member,Slovakia,54.8
+Member,Slovenia,55.9
+Member,Spain,52.5
+Member,Croatia,49.9
+Member,Denmark,69.7
+Member,Hungary,53.7
+Member,Poland,57.7
+Member,Sweden,66.7
+Not Member,Australia,74.8
+Not Member,Iceland,68
+Not Member,Japan,40
+Not Member,Norway,66.3
+Not Member,Singapore,59.8
+Not Member,Switzerland,63.7
+Not Member,Taiwan,53.4
+Not Member,Algeria,27.4
+Not Member,Argentina,35.7
+Not Member,Bolivia,29.7
+Not Member,Bosnia and Herzegovina,31.6
+Not Member,Brazil,31.1
+Not Member,China,38.3
+Not Member,Costa Rica,36.1
+Not Member,Ecuador,32.3
+Not Member,Egypt,27.7
+Not Member,El Salvador,29.9
+Not Member,Ghana,25.8
+Not Member,India,25.3
+Not Member,Jamaica,38.6
+Not Member,Macedonia,41.2
+Not Member,Malaysia,39.2
+Not Member,Mexico,42.8
+Not Member,Panama,36.9
+Not Member,Peru,43.6
+Not Member,Russia,35.6
+Not Member,Saudi Arabia,37
+Not Member,Thailand,36.6
+Not Member,Tunisia,30.7
+Not Member,Turkey,39.3
+Not Member,Uruguay,44.5
