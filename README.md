@@ -1,15 +1,15 @@
 # Visualização e Processamento de Conhecimento
 
 ## Atividades
-1 - [Histograma]()
+1 - [Histogram]()
 
-2 - [Barras Empilhadas]()
+2 - [Stacked Bars]()
 
-3 - [Dispersão]()
+3 - [Dispersion]()
 
 4 - [Boxplot]()
 
 5 - [Radar]()
 
 ## Referências
-[Dados](https://www.kaggle.com/csafrit2/higher-education-students-performance-evaluation)
+[Data](https://www.kaggle.com/ruchi798/higher-education-attrition-rates-20052013)
