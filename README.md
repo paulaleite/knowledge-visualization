@@ -11,5 +11,7 @@
 
 5 - [Radar](https://github.com/paulaleite/knowledge-visualization/tree/main/Radar)
 
-## Referências
-[Data](https://www.kaggle.com/ruchi798/higher-education-attrition-rates-20052013)
+## References
+[Dataset Support Women Entrepreneurship](https://www.kaggle.com/amruthatamerisa/dataset-support-women-entrepreneurship)
+
+[Percentage of Bachelors degrees done by women usa](https://www.kaggle.com/yogeshkumarsingla/percentage-of-bachelors-degrees-done-by-women-usa)
