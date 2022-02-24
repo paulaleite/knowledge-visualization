@@ -13,7 +13,7 @@ const svg = d3.select("#my_histogram")
           `translate(${margin.left},${margin.top})`);
 
 // get the data
-d3.csv('dataSetHisto.csv').then( function (data)  {
+d3.csv('dataSetHistogram.csv').then( function (data)  {
   // X axis: scale and draw:
   const x = d3.scaleLinear()
       .domain([d3.min(data, function(d) { return +d.attrition_rate } ), d3.max(data, function(d) { return +d.attrition_rate })]) // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })

@@ -4,7 +4,7 @@ var margin = {top: 10, right: 30, bottom: 20, left: 50},
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_barras")
+var svg = d3.select("#my_stacked_bars")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -13,13 +13,13 @@ var svg = d3.select("#my_barras")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("dataSetBarras.csv", function(data) {
+d3.csv("dataSetStackedBarras.csv", function(data) {
 
   // List of subgroups = header of the csv files = soil condition here
   var subgroups = data.columns.slice(1)
 
   // List of groups = species here = value of the first column called group -> I show them on the X axis
-  var groups = d3.map(data, function(d) { return(d.ano) }).keys()
+  var groups = d3.map(data, function(d) { return(d.Reference_year) }).keys()
 
   // Add X axis
   var x = d3.scaleBand()
@@ -32,7 +32,7 @@ d3.csv("dataSetBarras.csv", function(data) {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 110000])
+    .domain([0, (d3.max(data, function(d) { return +d.indigenousattrition }) + d3.max(data, function(d) { return +d.disattrition }) + d3.max(data, function(d) { return +d.nesbattrition }) + d3.max(data, function(d) { return +d.attrition_rate }))])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y));
@@ -58,7 +58,7 @@ d3.csv("dataSetBarras.csv", function(data) {
       // enter a second time = loop subgroup per subgroup to add all rectangles
       .data(function(d) { return d; })
       .enter().append("rect")
-        .attr("x", function(d) { return x(d.data.ano); })
+        .attr("x", function(d) { return x(d.data.Reference_year); })
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width",x.bandwidth())
