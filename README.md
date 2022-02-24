@@ -1,6 +1,6 @@
 # Visualization and Knowledge Processing
 
-## Atividades
+## Activities
 1 - [Histogram](https://github.com/paulaleite/knowledge-visualization/tree/main/Histogram)
 
 2 - [Stacked Bars](https://github.com/paulaleite/knowledge-visualization/tree/main/Stacked%20Bars)
