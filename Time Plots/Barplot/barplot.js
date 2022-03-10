@@ -49,7 +49,7 @@ svg.append("text")
   .attr("class",  "caption")
   .attr("x", 100)
   .attr("y", -6)
-  .text("Gender Inequality Index 2016");
+  .text("Gender Inequality Index");
 
 svg.append("text")
   .attr("transform", "translate(-40,0)rotate(-90)")
