@@ -45,4 +45,20 @@ svg.selectAll("mybar")
     .attr("height", function(d) { return height - y(d.index); })
     .attr("fill", "#69b3a2")
 
+svg.append("text")
+  .attr("class",  "caption")
+  .attr("x", 100)
+  .attr("y", -6)
+  .text("Gender Inequality Index 2016");
+
+svg.append("text")
+  .attr("transform", "translate(-40,0)rotate(-90)")
+  .attr("x", -250)
+  .text("Gender Inequality Index")
+
+  svg.append("text")
+  .attr("x", 150)
+  .attr("y", 350)
+  .text("Year")  
+
 })
