@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8">
+    <style>
+        .states {
+            stroke: black;
+            stroke-linejoin: round;
+        }
+    </style>
+</header>
+
+<body>
+    <div>
+        <h1>Cartogram IDEB</h4>
+        <tr>
+            <td>Date:</td>
+            <td>
+                <select id="days" onchange="update()"></select>
+            </td>
+        </tr>
+        <hr />
+
+        <svg id="map-container"></svg>
+        <div>
+            <h6>Based on this dataset (Access in March/22): <a href="https://hdr.undp.org/en/indicators/68606"> Gender Inequality Index</a> </h6>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="cartogram.js"></script>
+    <script src="conversor.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
