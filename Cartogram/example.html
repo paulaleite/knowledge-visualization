@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 960px;
+        height: 500px;
+        position: relative;
+    }
+
+    #map-container {
+        height: 500px;
+        width: 500px;
+    }
+
+    .states {
+        fill: grey;
+        stroke: black;
+        stroke-linejoin: round;
+    }
+
+    #map {
+        overflow: visible;
+    }
+</style>
+
+<body>
+    <div id="click_to_run" onclick="doUpdate()">Haz click para hacer cartograma</div>
+    <div id="map-container"></div>
+</body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="cartogram.js"></script>
+<script>
+    var map = d3.select("#map-container")
+        .append('svg')
+        .attr("id", "map");
+    var topo;
+
+    var edos = map.append("g")
+        .attr("id", "edos")
+        .selectAll("path");
+
+    var proj = d3.geo.mercator()
+        .center([-97.16, 21.411])
+        .scale(1000);
+
+    var carto = d3.cartogram()
+        .projection(proj)
+        .properties(function (d) {
+            //regresa también las propiedades (valores) de la fuente de dato
+            return d.properties;
+        });
+
+    var topology, geometry;
+
+    function makeMap(data) {
+        topology = data;
+        geometries = data.objects.mex_estados.geometries;
+        var features = carto.features(data, geometries),
+            path = d3.geo.path()
+                .projection(proj);
+
+        edos = edos.data(features)
+            .enter()
+            .append("path")
+            .attr("class", "states")
+            .attr("id", function (d) {
+                return d.properties.estado;
+            })
+            .attr("d", path);
+    };
+
+    function doUpdate() {
+        var scale = d3.scale.linear()
+            .domain([0, 17000000])
+            .range([1, 1000]);
+        carto.value(function (d) {
+            return + scale(d.properties['POB1'])
+        });
+
+        var carto_features = carto(topology, geometries).features;
+        //actualiza el mapa
+        edos.data(carto_features);
+
+        edos.transition()
+            .duration(900)
+            .attr("d", carto.path);
+    };
+
+    d3.json("estados.json", function (data) {
+        makeMap(data)
+    });
+
+</script>
