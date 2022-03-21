@@ -13,7 +13,8 @@ var svg = d3.select("#my_wordsviz")
   .append("g")
     .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
 
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum.csv", function(data) {
+// d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum.csv", function(data) {
+d3.csv("dataSetWords.csv", function(data) {
 
   // Scales
   var x = d3.scaleBand()
@@ -22,7 +23,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
       .domain(data.map(function(d) { return d.Country; })); // The domain of the X axis is the list of states.
   var y = d3.scaleRadial()
       .range([innerRadius, outerRadius])   // Domain will be define later.
-      .domain([0, 14000]); // Domain of Y is from 0 to the max seen in the data
+      .domain([0, d3.max(data, function(d) { return +d.Value } )]); // Domain of Y is from 0 to the max seen in the data
 
   // Add the bars
   svg.append("g")
