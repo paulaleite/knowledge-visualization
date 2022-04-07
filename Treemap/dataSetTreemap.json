@@ -1,0 +1,65 @@
+{
+    "children": [
+    {
+        "name":"Norte",
+        "children":[
+            {"name":"Acre","group":"A","value":7151,"colname":"level3"},
+            {"name":"Amapá","group":"A","value":7375,"colname":"level3"},
+            {"name":"Amazonas","group":"C","value":6914,"colname":"level3"},
+            {"name":"Pará","group":"C","value":6841,"colname":"level3"},
+            {"name":"Rondônia","group":"C","value":6668,"colname":"level3"},
+            {"name":"Roraima","group":"C","value":7062,"colname":"level3"},
+            {"name":"Tocantins","group":"C","value":6787,"colname":"level3"}
+        ],
+        "colname":"level2"
+    },
+    {
+        "name":"Nordeste",
+        "children":[
+            {"name":"Alagoas","group":"C","value":6880,"colname":"level3"},
+            {"name":"Bahia","group":"A","value":6855,"colname":"level3"},
+            {"name":"Ceará","group":"B","value":6683,"colname":"level3"},
+            {"name":"Maranhão","group":"B","value":7283,"colname":"level3"},
+            {"name":"Paraíba","group":"B","value":6880,"colname":"level3"},
+            {"name":"Pernambuco","group":"B","value":6977,"colname":"level3"},
+            {"name":"Piauí","group":"B","value":6841,"colname":"level3"},
+            {"name":"Rio Grande do Norte","group":"B","value":7187,"colname":"level3"},
+            {"name":"Sergipe","group":"B","value":7201,"colname":"level3"}
+        ],
+        "colname":"level2"
+    },
+
+    {
+        "name":"Centro-Oeste",
+        "children":[
+            {"name":"Distrito Federal","group":"B","value":7346,"colname":"level3"},
+            {"name":"Goiás","group":"A","value":6733,"colname":"level3"},
+            {"name":"Mato Grosso","group":"A","value":6628,"colname":"level3"},
+            {"name":"Mato Grosso do Sul","group":"D","value":7071,"colname":"level3"}
+        ],
+        "colname":"level2"
+    },
+
+    {
+        "name":"Sudeste",
+        "children":[
+            {"name":"Espírito Santo","group":"B","value":6803,"colname":"level3"},
+            {"name":"Minas Gerais","group":"A","value":6630,"colname":"level3"},
+            {"name":"Rio de Janeiro","group":"A","value":6954,"colname":"level3"},
+            {"name":"São Paulo","group":"D","value":6925,"colname":"level3"}
+        ],
+        "colname":"level2"
+    },
+
+    {
+        "name":"Sul",
+        "children":[
+            {"name":"Paraná","group":"B","value":6635,"colname":"level3"},
+            {"name":"Rio Grande do Sul","group":"A","value":6991,"colname":"level3"},
+            {"name":"Santa Catarina","group":"A","value":6724,"colname":"level3"}
+        ],
+        "colname":"level2"
+    }
+
+    ]
+}
