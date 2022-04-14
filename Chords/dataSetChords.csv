@@ -1,0 +1,122 @@
+"","source_country","target_country","z"
+"1","Australia","Australia",0.417199947829462
+"2","Australia","Brazil",0.00225860257183788
+"3","Australia","Iceland",0.00257141372615345
+"4","Australia","Korea, Republic of",0.00420969587333163
+"5","Australia","Mexico",0.00443025424654397
+"6","Australia","Portugal",0.00630287966526025
+"7","Australia","Russian Federation",0.000494135586139179
+"8","Australia","South Africa",0.00239433080150701
+"9","Australia","Switzerland",0.00400292239844506
+"10","Australia","Thailand",0.00695501139374865
+"11","Australia","United States",0.0980731893270955
+"12","Brazil","Australia",0.00545597957058129
+"13","Brazil","Brazil",0.400787892257477
+"14","Brazil","Iceland",0.000758259141598358
+"15","Brazil","Korea, Republic of",0.000623166995681409
+"16","Brazil","Mexico",0.00520758433454045
+"17","Brazil","Portugal",0.0305395405995477
+"18","Brazil","Russian Federation",0.00113738871239754
+"19","Brazil","South Africa",0.00146858236045199
+"20","Brazil","Switzerland",0.00380001133030901
+"21","Brazil","Thailand",0.00134220583685227
+"22","Brazil","United States",0.131675621968598
+"23","Iceland","Australia",0.00866551126516464
+"24","Iceland","Brazil",0.00185689527110671
+"25","Iceland","Iceland",0.0933399356276306
+"26","Iceland","Korea, Republic of",0.000123793018073781
+"27","Iceland","Mexico",0.00482792770487744
+"28","Iceland","Portugal",0.00940826937360733
+"29","Iceland","Russian Federation",0.000866551126516464
+"30","Iceland","South Africa",0.00148551621688537
+"31","Iceland","Switzerland",0.00717999504827928
+"32","Iceland","Thailand",0.0106461995543451
+"33","Iceland","United States",0.118346125278534
+"34","Korea, Republic of","Australia",0.0105151724231232
+"35","Korea, Republic of","Brazil",0.000777899535966016
+"36","Korea, Republic of","Iceland",0.00185004802684092
+"37","Korea, Republic of","Korea, Republic of",0.238111665787302
+"38","Korea, Republic of","Mexico",0.00118376016342655
+"39","Korea, Republic of","Portugal",0.00608452724001245
+"40","Korea, Republic of","Russian Federation",0.00220517607586888
+"41","Korea, Republic of","South Africa",0.000287484611117875
+"42","Korea, Republic of","Switzerland",0.0104644398446907
+"43","Korea, Republic of","Thailand",0.0146448043075341
+"44","Korea, Republic of","United States",0.0588464088098814
+"45","Mexico","Australia",0.00356878719932381
+"46","Mexico","Brazil",0.0107533193242783
+"47","Mexico","Iceland",0.00123264031555592
+"48","Mexico","Korea, Republic of",0.00232440745219116
+"49","Mexico","Mexico",0.318455560381766
+"50","Mexico","Portugal",0.0078536797248277
+"51","Mexico","Russian Federation",0.00109176713663524
+"52","Mexico","South Africa",0.000598711010412876
+"53","Mexico","Switzerland",0.00401488559923929
+"54","Mexico","Thailand",0.00245354119953512
+"55","Mexico","United States",0.16314288062172
+"56","Portugal","Australia",0.00467730524329848
+"57","Portugal","Brazil",0.0188467887744674
+"58","Portugal","Iceland",0.00318371197232922
+"59","Portugal","Korea, Republic of",0.000727144092445562
+"60","Portugal","Mexico",0.00196525430390693
+"61","Portugal","Portugal",0.335527867306029
+"62","Portugal","Russian Federation",0.000845059350679978
+"63","Portugal","South Africa",0.00176872887351623
+"64","Portugal","Switzerland",0.00652464428897099
+"65","Portugal","Thailand",0.00277100856850876
+"66","Portugal","United States",0.0365144249665907
+"67","Russian Federation","Australia",0.00261699638828883
+"68","Russian Federation","Brazil",0.003261639870559
+"69","Russian Federation","Iceland",0.00137467020722513
+"70","Russian Federation","Korea, Republic of",0.00445700526814607
+"72","Russian Federation","Mexico",0.00206627447297193
+"73","Russian Federation","Portugal",0.0187416217693116
+"74","Russian Federation","Russian Federation",0.211993784099933
+"75","Russian Federation","South Africa",0.000354340457141881
+"76","Russian Federation","Switzerland",0.00395324413630581
+"77","Russian Federation","Thailand",0.0229040548501951
+"78","Russian Federation","United States",0.0501327709423749
+"79","South Africa","Australia",0.0200339104051401
+"80","South Africa","Brazil",0.00609048723897912
+"81","South Africa","Iceland",0.00185168659646618
+"82","South Africa","Korea, Republic of",0.00180706764233446
+"83","South Africa","Mexico",0.00211940032125647
+"84","South Africa","Portugal",0.00934767089059432
+"85","South Africa","Russian Federation",0.00142780653221488
+"86","South Africa","South Africa",0.365853114402998
+"87","South Africa","Switzerland",0.00568891665179368
+"88","South Africa","Thailand",0.00912457611993575
+"89","South Africa","United States",0.0928074245939675
+"90","Switzerland","Australia",0.0169686207358237
+"91","Switzerland","Brazil",0.0070749564861989
+"92","Switzerland","Iceland",0.00756470696009414
+"93","Switzerland","Korea, Republic of",0.00205060989789231
+"94","Switzerland","Mexico",0.00424920195336448
+"95","Switzerland","Portugal",0.0283702936388813
+"96","Switzerland","Russian Federation",0.00230077021189636
+"97","Switzerland","South Africa",0.00612364261604268
+"98","Switzerland","Switzerland",0.0789097238371069
+"99","Switzerland","Thailand",0.00693754448273189
+"100","Switzerland","United States",0.100550352690809
+"101","Thailand","Australia",0.0172389851018667
+"102","Thailand","Brazil",0.00166636910075582
+"103","Thailand","Iceland",0.00275744410720308
+"104","Thailand","Korea, Republic of",0.0287250292606479
+"105","Thailand","Mexico",0.00105139955166736
+"106","Thailand","Portugal",0.00285663274415283
+"107","Thailand","Russian Federation",0.0043444622983991
+"108","Thailand","South Africa",0.00126961455295681
+"109","Thailand","Switzerland",0.00827233232160924
+"110","Thailand","Thailand",0.138903767184431
+"111","Thailand","United States",0.0548909916879922
+"112","United States","Australia",0.00679206091452114
+"113","United States","Brazil",0.00365299685749315
+"114","United States","Iceland",0.00554844682124817
+"115","United States","Korea, Republic of",0.00396380474761443
+"116","United States","Mexico",0.0131250824836324
+"117","United States","Portugal",0.00497885550015206
+"118","United States","Russian Federation",0.000781705751954264
+"119","United States","South Africa",0.00197100018935373
+"120","United States","Switzerland",0.00344126495942283
+"121","United States","Thailand",0.0049995122706955
+"122","United States","United States",0.64673670842012
